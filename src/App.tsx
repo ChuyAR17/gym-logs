@@ -1,12 +1,9 @@
-import { GiWeightLiftingUp } from 'react-icons/gi';
+import { LoginPage } from './pages/LoginPage';
 
 export const App = () => {
   return (
     <div className='App'>
-      <h1>This is my Gym Logs App</h1>
-      <hr />
-      <p>Here goes all the code</p>
-      <GiWeightLiftingUp size='200px' />
+      <LoginPage />
     </div>
   );
 }
