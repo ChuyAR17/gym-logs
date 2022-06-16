@@ -1,12 +1,14 @@
 import { SubmitHandler, useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '../components/Button';
 import { Input } from '../components/Input';
-import { ILogin } from '../types/types';
+import { ILogin } from '../types/interfaces';
 
 export const LoginPage = () => {
   const { register, handleSubmit } = useForm<ILogin>();
+  const navigate = useNavigate();
   // const { register, handleSubmit, watch, formState: { errors } } = useForm<ILogin>();
-  const onSubmit: SubmitHandler<ILogin> = data => console.log(data);
+  const onSubmit: SubmitHandler<ILogin> = data => navigate('/');
 
   return (
     <div className='Login'>

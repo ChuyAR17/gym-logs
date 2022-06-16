@@ -1,4 +1,4 @@
-import { IButton } from '../types/types'
+import { IButton } from '../types/interfaces'
 
 export const Button = ({ text }: IButton) => {
   return (

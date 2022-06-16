@@ -1,4 +1,4 @@
-import { IInput } from '../types/types';
+import { IInput } from '../types/interfaces';
 
 export const Input = ({ text = '', ...props }: IInput) => {
   return (
